@@ -1,12 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>First Laravel Page</title>
-</head>
-<body>
+@extends('layouts.home')
 
-<h1>Welcome</h1>
-<p>This is a paragraph.</p>
+@section('title', 'Sub Page Title')
 
-</body>
-</html>
+@section('sidebar')
+    <div class="col-sm-4 col-lg-2" style="background-color: coral">
+        <ul>
+            <li>Bilgisayar</li>
+            <li>Elektronik</li>
+            <li>Ev Eşyaları</li>
+        </ul>
+    </div>
+@endsection
+
+@section('content')
+    <div class="col-sm-8 col-lg-10">
+    <h1>Slider</h1>
+    zzzz
+    <br>
+    bbbbbbbbbbbbb<br>
+
+    <h1>İçeriklerimiz</h1>
+    dddddddddddd<br>
+    kkkkkkkkkkkk<br>
+    </div>
+@endsection
