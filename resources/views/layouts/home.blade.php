@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>@yield('title')</title>
+    <!-- basic -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title> @yield('title') </title>
+    <meta name="description" content=" @yield('description') ">
+    <meta name="keywords" content=" @yield('keywords') ">
+    <meta name="author" content="emretsdmr">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{{ asset('assets')}}/css/bootstrap.min.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="{{ asset('assets')}}/css/owl.carousel.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="{{ asset('assets')}}/css/style.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="{{ asset('assets')}}/css/responsive.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     @yield('css')
-    @yield('js')
+    @yield('headerjs')
 </head>
+
 <body>
+@include('home._sidebar')
+@include('home._header')
+@include('home._slider')
 
-<div class="jumbotron text-center">
-    <h1>Header</h1>
-    <p>Resize this responsive page to see the effect!</p>
-    <a href="/">Home</a>
-    <a href="/aboutus">About Us</a>
-    @yield('header')
-</div>
 
-<div class="container">
-    <div class="row">
-            @yield('sidebar')
-            @yield('content')
-    </div>
-</div>
+@section('content')
+içerik alanı
+@show
 
-<div class="jumbotron text-center">
-    <h1>Footer</h1>
-    <p>Sayfa Altı</p>
-    @yield('footer')
-</div>
-
+@include('home._footer')
+@yield('footerjs')
 </body>
-</html>
 
+</html>
