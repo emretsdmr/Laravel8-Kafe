@@ -38,8 +38,10 @@
 
 @include('admin._header')
 @include('admin._sidebar')
+
 @section('content')
-@endsection
+@show
+
 @include('admin._footer')
 @yield('footer')
 

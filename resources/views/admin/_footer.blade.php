@@ -32,7 +32,7 @@
 <script src="{{ asset('assets')}}/admin/plugins/morrisjs/morris.js"></script>
 
 <!-- ChartJs -->
-<script src="plugins/chartjs/Chart.bundle.js"></script>
+<script src="{{ asset('assets')}}/admin/plugins/chartjs/Chart.bundle.js"></script>
 
 <!-- Flot Charts Plugin Js -->
 <script src="{{ asset('assets')}}/admin/plugins/flot-charts/jquery.flot.js"></script>

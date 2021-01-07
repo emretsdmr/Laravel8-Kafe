@@ -3,5 +3,9 @@
 @section('title', 'Admin Panel Home Page')
 
 
-@include('admin._content')
+@section('content')
+    @include('admin._content')
+@endsection
+
+
 
