@@ -2,6 +2,9 @@
 
 @section('title', 'Edit Product')
 
+@section('javascript')
+    <script src="//cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+@endsection
 
 @section('content')
 <head>
@@ -61,9 +64,10 @@
                         </div>
                         <label>Detail</label>
                         <div class="form-group">
-                            <div class="form-line">
-                                <input type="text" name="detail" value="{{$data->detail}}" class="form-control" >
-                            </div>
+                            <textarea name="detail">{{$data->detail}}</textarea>
+                            <script>
+                                CKEDITOR.replace( 'detail' );
+                            </script>
                         </div>
                         <label>Price</label>
                         <div class="form-group">
@@ -81,6 +85,15 @@
                         <div class="form-group">
                             <div class="form-line">
                                 <input type="number" value="{{$data->tax}}" name="tax" class="form-control" >
+                            </div>
+                        </div>
+                        <label>Image</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="file" name="image" value="{{$data->image}}" class="form-control" >
+                                @if($data->image)
+                                    <img src="{{Storage::url($data->image)}}" height="60" alt="">
+                                @endif
                             </div>
                         </div>
                     <div class="row clearfix">

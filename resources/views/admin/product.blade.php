@@ -44,7 +44,6 @@
                                             <th>Description</th>
                                             <th>Image</th>
                                             <th>Category_id</th>
-                                            <th>Detail</th>
                                             <th>Price</th>
                                             <th>Weight</th>
                                             <th>Tax</th>
@@ -52,6 +51,7 @@
                                             <th>Status</th>
                                             <th>Edit</th>
                                             <th>Delete</th>
+                                            <th>Image Gallery</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -61,16 +61,22 @@
                                             <td>{{$rs->title}}</td>
                                             <td>{{$rs->keywords}}</td>
                                             <td>{{$rs->description}}</td>
-                                            <td>{{$rs->image}}</td>
+                                            <td>
+                                                @if($rs->image)
+                                                    <img src="{{Storage::url($rs->image)}}" height="30" alt="">
+                                                @endif
+                                            </td>
+
                                             <td>{{$rs->category_id}}</td>
-                                            <td>{{$rs->detail}}</td>
-                                            <td>{{$rs->prica}}</td>
+                                            <td>{{$rs->price}}</td>
                                             <td>{{$rs->weight}}</td>
                                             <td>{{$rs->tax}}</td>
                                             <td>{{$rs->user_id}}</td>
                                             <td>{{$rs->status}}</td>
                                             <td><a href="{{route('admin_product_edit',['id'=>$rs->id])}}"><i class="material-icons">edit</i></td>
                                             <td><a href="{{route('admin_product_delete',['id'=>$rs->id])}}" onclick="return confirm('Delete ! Are you sure?')"><i class="material-icons">delete</i></a></td>
+                                            <td><a href="{{route('admin_image_add',['product_id'=>$rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=700')">
+                                                    <i class="material-icons">image</i></a></td>
                                         </tr>
                                         @endforeach
                                         </tbody>

@@ -8,6 +8,8 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
+use League\CommonMark\Inline\Element\Strong;
 
 class ProductController extends Controller
 {
@@ -52,6 +54,7 @@ class ProductController extends Controller
         $data->tax = $request->input('tax');
         $data->user_id = Auth::id();
         $data->status = $request->input('status');
+        $data->image=Storage::putFile('images',$request->file('image'));
         $data->save();
         return redirect()->route('admin_products');
     }
@@ -100,6 +103,7 @@ class ProductController extends Controller
         $data->tax = $request->input('tax');
         $data->user_id = Auth::id();
         $data->status = $request->input('status');
+        $data->image=Storage::putFile('images',$request->file('image'));
         $data->save();
         return redirect()->route('admin_products');
     }
