@@ -50,7 +50,7 @@
                                         @foreach($datalist as $rs)
                                         <tr>
                                             <th scope="row">{{$rs->id}}</th>
-                                            <td>{{$rs->parent_id}}</td>
+                                            <td>{{App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}</td>
                                             <td>{{$rs->title}}</td>
                                             <td>{{$rs->status}}</td>
                                             <td><a href="{{route('admin_category_edit',['id'=>$rs->id])}}"><i class="material-icons">edit</i></td>

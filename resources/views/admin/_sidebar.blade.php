@@ -42,6 +42,12 @@
                     <span>Products</span>
                 </a>
             </li>
+            <li>
+                <a href="{{route('admin_setting')}}">
+                    <i class="material-icons">settings</i>
+                    <span>Settings</span>
+                </a>
+            </li>
 
         </ul>
     </div>

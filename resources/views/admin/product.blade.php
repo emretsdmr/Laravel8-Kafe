@@ -39,11 +39,11 @@
                                         <thead>
                                         <tr>
                                             <th>id</th>
+                                            <th>Category</th>
                                             <th>Title</th>
                                             <th>Keywords</th>
                                             <th>Description</th>
                                             <th>Image</th>
-                                            <th>Category_id</th>
                                             <th>Price</th>
                                             <th>Weight</th>
                                             <th>Tax</th>
@@ -58,6 +58,7 @@
                                         @foreach($datalist as $rs)
                                         <tr>
                                             <th scope="row">{{$rs->id}}</th>
+                                            <td>{{App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category,$rs->category->title)}}</td>
                                             <td>{{$rs->title}}</td>
                                             <td>{{$rs->keywords}}</td>
                                             <td>{{$rs->description}}</td>
@@ -66,8 +67,6 @@
                                                     <img src="{{Storage::url($rs->image)}}" height="30" alt="">
                                                 @endif
                                             </td>
-
-                                            <td>{{$rs->category_id}}</td>
                                             <td>{{$rs->price}}</td>
                                             <td>{{$rs->weight}}</td>
                                             <td>{{$rs->tax}}</td>

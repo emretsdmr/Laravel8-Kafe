@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Edit Product')
+@section('title', 'Edit Setting')
 
 @section('javascript')
     <script src="//cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
@@ -28,22 +28,13 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        EDIT PRODUCT
+                        EDIT Setting
                     </h2>
                 </div>
                 <div class="body">
-                    <form role="form" action="{{route('admin_product_update',['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                    <form role="form" action="{{route('admin_setting_update')}}" method="post" enctype="multipart/form-data">
                         @csrf
-                        <label>Category</label>
-                        <div class="form-group">
-                            <div class="form-line">
-                                <select class="form-control select2" name="category_id" style="width: 100%;">
-                                    @foreach($datalist as $rs)
-                                        <option value="{{$rs->id}}" @if ($rs->id==$data->parent_id) selected="selected" @endif>{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
+                        <input type="hidden" id="id" name="id" value="{{$data->id}}" class="form-control" >
                         <label>Title</label>
                         <div class="form-group">
                             <div class="form-line">
@@ -62,39 +53,98 @@
                                 <input type="text" name="description" value="{{$data->description}}" class="form-control" >
                             </div>
                         </div>
-                        <label>Detail</label>
+                        <label>Company</label>
                         <div class="form-group">
-                            <textarea name="detail">{{$data->detail}}</textarea>
+                            <div class="form-line">
+                                <input type="text" name="company" value="{{$data->company}}" class="form-control" >
+                            </div>
+                        </div>
+                        <label>Adress</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" name="adress" value="{{$data->adress}}"  class="form-control" >
+                            </div>
+                        </div>
+                        <label>Phone</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" name="phone" value="{{$data->phone}}"  class="form-control" >
+                            </div>
+                        </div>
+                        <label>Fax</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" name="fax" value="{{$data->fax}}"  class="form-control" >
+                            </div>
+                        </div>
+                        <label>E-Mail</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" name="email" value="{{$data->email}}"  class="form-control" >
+                            </div>
+                        </div>
+                        <label>SMTP Server</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" name="smtpserver" value="{{$data->smtpserver}}"  class="form-control" >
+                            </div>
+                        </div>
+                        <label>SMTP E-Mail</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" name="smtpserver" value="{{$data->smtpemail}}"  class="form-control" >
+                            </div>
+                        </div>
+                        <label>SMTP Password</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="password" name="smtppassword" value="{{$data->smtppassword}}"  class="form-control" >
+                            </div>
+                        </div>
+                        <label>SMTP Port</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="number" name="smtpport" value="{{$data->smtpport}}"  class="form-control" >
+                            </div>
+                        </div>
+                        <label>Facebook</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" name="facebook" value="{{$data->facebook}}"  class="form-control" >
+                            </div>
+                        </div>
+                        <label>Instagram</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" name="instagram" value="{{$data->instagram}}"  class="form-control" >
+                            </div>
+                        </div>
+                        <label>Twitter</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" name="twitter" value="{{$data->twitter}}"  class="form-control" >
+                            </div>
+                        </div>
+                        <label>About Us</label>
+                        <div class="form-group">
+                            <textarea name="aboutus">{{$data->detail}}</textarea>
                             <script>
-                                CKEDITOR.replace( 'detail' );
+                                CKEDITOR.replace( 'aboutus' );
                             </script>
                         </div>
-                        <label>Price</label>
+                        <label>Contact</label>
                         <div class="form-group">
-                            <div class="form-line">
-                                <input type="number" value="{{$data->price}}" name="price" class="form-control" >
-                            </div>
+                            <textarea name="contact">{{$data->detail}}</textarea>
+                            <script>
+                                CKEDITOR.replace( 'contact' );
+                            </script>
                         </div>
-                        <label>Weight</label>
+                        <label>References</label>
                         <div class="form-group">
-                            <div class="form-line">
-                                <input type="text" name="weight" value="{{$data->weight}}" class="form-control" >
-                            </div>
-                        </div>
-                        <label>Tax</label>
-                        <div class="form-group">
-                            <div class="form-line">
-                                <input type="number" value="{{$data->tax}}" name="tax" class="form-control" >
-                            </div>
-                        </div>
-                        <label>Image</label>
-                        <div class="form-group">
-                            <div class="form-line">
-                                <input type="file" name="image" class="form-control" >
-                                @if($data->image)
-                                    <img src="{{Storage::url($data->image)}}" height="60" alt="">
-                                @endif
-                            </div>
+                            <textarea name="references">{{$data->detail}}</textarea>
+                            <script>
+                                CKEDITOR.replace( 'references' );
+                            </script>
                         </div>
                     <div class="row clearfix">
                         <div class="col-md-3">
@@ -107,7 +157,7 @@
 
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary m-t-15 waves-effect">Edit Product</button>
+                    <button type="submit" class="btn btn-primary m-t-15 waves-effect">Edit Setting</button>
                     </form>
                 </div>
             </div>

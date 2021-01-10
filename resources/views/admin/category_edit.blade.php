@@ -25,7 +25,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        ADD CATEGORY
+                        EDIT CATEGORY
                     </h2>
                 </div>
                 <div class="body">
@@ -37,7 +37,7 @@
                                 <select class="form-control select2" name="parent_id" style="width: 100%;">
                                     <option value="0" selected="selected">Main Category</option>
                                     @foreach($datalist as $rs)
-                                        <option value="{{$rs->id}}" @if ($rs->id==$data->parent_id) selected="selected" @endif>{{$rs->title}}</option>
+                                        <option value="{{$rs->id}}" @if ($rs->id==$data->parent_id) selected="selected" @endif>{{App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}</option>
                                     @endforeach
                                 </select>
                             </div>
