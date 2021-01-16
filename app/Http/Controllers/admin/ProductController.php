@@ -47,6 +47,7 @@ class ProductController extends Controller
         $data->title = $request->input('title');
         $data->keywords = $request->input('keywords');
         $data->description = $request->input('description');
+        $data->slug = $request->input('slug');
         $data->category_id = $request->input('category_id');
         $data->detail = $request->input('detail');
         $data->price = $request->input('price');
@@ -95,6 +96,7 @@ class ProductController extends Controller
         $data=Product::find($id);
         $data->title = $request->input('title');
         $data->keywords = $request->input('keywords');
+        $data->slug = $request->input('slug');
         $data->description = $request->input('description');
         $data->category_id = $request->input('category_id');
         $data->detail = $request->input('detail');

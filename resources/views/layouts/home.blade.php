@@ -76,6 +76,7 @@ $setting=\App\Http\Controllers\HomeController::getsetting();
 <body>
 @include('home._sidebar')
 @include('home._header')
+@include('home._slider')
 
 @section('content')
 içerik alanı

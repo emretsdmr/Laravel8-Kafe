@@ -62,6 +62,12 @@
                                 <input type="text" name="description" value="{{$data->description}}" class="form-control" >
                             </div>
                         </div>
+                        <label>Slug</label>
+                        <div class="form-group">
+                            <div class="form-line">
+                                <input type="text" name="slug" value="{{$data->slug}}" class="form-control" >
+                            </div>
+                        </div>
                         <label>Detail</label>
                         <div class="form-group">
                             <textarea name="detail">{{$data->detail}}</textarea>

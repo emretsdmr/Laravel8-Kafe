@@ -43,6 +43,7 @@
                                             <th>Title</th>
                                             <th>Keywords</th>
                                             <th>Description</th>
+                                            <th>Slug</th>
                                             <th>Image</th>
                                             <th>Price</th>
                                             <th>Weight</th>
@@ -62,6 +63,7 @@
                                             <td>{{$rs->title}}</td>
                                             <td>{{$rs->keywords}}</td>
                                             <td>{{$rs->description}}</td>
+                                            <td>{{$rs->slug}}</td>
                                             <td>
                                                 @if($rs->image)
                                                     <img src="{{Storage::url($rs->image)}}" height="30" alt="">
