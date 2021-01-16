@@ -19,7 +19,7 @@
                     <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
                     <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="{{route('admin_logout')}}"><i class="material-icons">input</i>Sign Out</a></li>
+                    <li><a href="{{route('logout')}}"><i class="material-icons">input</i>Sign Out</a></li>
 
                 </ul>
             </div>
@@ -46,6 +46,12 @@
                 <a href="{{route('admin_setting')}}">
                     <i class="material-icons">settings</i>
                     <span>Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{route('admin_message')}}">
+                    <i class="material-icons">message</i>
+                    <span>Contact Messages</span>
                 </a>
             </li>
 

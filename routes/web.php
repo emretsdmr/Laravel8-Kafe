@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,8 +25,12 @@ Route::get('/', function () {
     return view('home.index');
 });
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
+Route::get('/references', [HomeController::class, 'references'])->name('references');
+Route::get('/fag', [HomeController::class, 'fag'])->name('fag');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
 
 
 //Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->where(['id'=>'[0-9]+','name'=>'[A-Za-z]+']);
@@ -55,6 +60,16 @@ Route::middleware('auth')->prefix('admin')->group(function(){
 
     });
 
+    #Message
+    Route::prefix('messages')->group(function(){
+        Route::get('/',[\App\Http\Controllers\Admin\MessageController::class,'index'])->name('admin_message');
+        Route::get('edit/{id}',[\App\Http\Controllers\Admin\MessageController::class,'edit'])->name('admin_message_edit');
+        Route::post('update/{id}',[\App\Http\Controllers\Admin\MessageController::class,'update'])->name('admin_message_update');
+        Route::get('delete/{id}',[\App\Http\Controllers\Admin\MessageController::class,'destroy'])->name('admin_message_delete');
+        Route::get('show',[\App\Http\Controllers\Admin\MessageController::class,'show'])->name('admin_message_show');
+
+    });
+
     #Product Image Gallery
     Route::prefix('image')->group(function(){
         Route::get('create/{product_id}',[\App\Http\Controllers\Admin\ImageController::class,'create'])->name('admin_image_add');
@@ -71,10 +86,15 @@ Route::middleware('auth')->prefix('admin')->group(function(){
 
 });
 
+Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function(){
+    Route::get('/',[UserController::class,'index'])->name('myprofile');
+});
+
+
 
 Route::get('/admin/login',[HomeController::class, 'login'])->name('admin_login');
 Route::post('/admin/logincheck',[HomeController::class, 'logincheck'])->name('admin_logincheck');
-Route::get('/admin/logout',[HomeController::class, 'logout'])->name('admin_logout');
+Route::get('/logout',[HomeController::class, 'logout'])->name('logout');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

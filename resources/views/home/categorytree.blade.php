@@ -1,5 +1,5 @@
 @foreach($children as $subcategory)
-    <ul class="list-links">
+    <ul class="list">
         @if(count($subcategory->children))
             <li>{{$subcategory->title}}</li>
                 <ul>

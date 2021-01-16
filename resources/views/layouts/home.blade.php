@@ -1,3 +1,7 @@
+@php
+$setting=\App\Http\Controllers\HomeController::getsetting();
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,13 +32,50 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     @yield('css')
     @yield('headerjs')
+    <!--showblade head-->
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="fWdNKuXGGppnRBbPPRWBerb57ISDxunL2jSw3iCI">
+
+        <title>Laravel</title>
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+
+
+
+        <!-- Livewire Styles -->
+        <style>
+            [wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid] {
+                display: none;
+            }
+
+            [wire\:offline] {
+                display: none;
+            }
+
+            [wire\:dirty]:not(textarea):not(input):not(select) {
+                display: none;
+            }
+
+            input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {
+                animation-duration: 50000s;
+                animation-name: livewireautofill;
+            }
+
+            @keyframes livewireautofill { from {} }
+        </style>
+
+        <!-- Scripts -->
+        <script src="/js/app.js" defer></script>
+        <!--end showblade head-->
 </head>
 
 <body>
 @include('home._sidebar')
 @include('home._header')
-@include('home._slider')
-
 
 @section('content')
 içerik alanı

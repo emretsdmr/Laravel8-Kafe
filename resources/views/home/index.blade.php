@@ -1,12 +1,12 @@
 @extends('layouts.home')
 
-@section('title', 'Laravel Kafe Sitesi')
+@section('title', $setting->title)
 @section('description')
-    Delicious!
+    {{$setting->description}}
 @endsection
 
-@section('keywords','Hamburger','Kofte','Tavuk')
-
+@section('keywords',$setting->description)
+@include('home._slider')
 @section('content')
 
     <!-- section -->

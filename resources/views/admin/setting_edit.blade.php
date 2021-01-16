@@ -28,7 +28,7 @@
             <div class="card">
                 <div class="header">
                     <h2>
-                        EDIT Setting
+                        Edit Settings
                     </h2>
                 </div>
                 <div class="body">
@@ -62,7 +62,7 @@
                         <label>Adress</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" name="adress" value="{{$data->adress}}"  class="form-control" >
+                                <input type="text" name="address" value="{{$data->address}}"  class="form-control" >
                             </div>
                         </div>
                         <label>Phone</label>
@@ -92,7 +92,7 @@
                         <label>SMTP E-Mail</label>
                         <div class="form-group">
                             <div class="form-line">
-                                <input type="text" name="smtpserver" value="{{$data->smtpemail}}"  class="form-control" >
+                                <input type="text" name="smtpemail" value="{{$data->smtpemail}}"  class="form-control" >
                             </div>
                         </div>
                         <label>SMTP Password</label>
@@ -127,21 +127,21 @@
                         </div>
                         <label>About Us</label>
                         <div class="form-group">
-                            <textarea name="aboutus">{{$data->detail}}</textarea>
+                            <textarea name="aboutus">{{$data->aboutus}}</textarea>
                             <script>
                                 CKEDITOR.replace( 'aboutus' );
                             </script>
                         </div>
                         <label>Contact</label>
                         <div class="form-group">
-                            <textarea name="contact">{{$data->detail}}</textarea>
+                            <textarea name="contact">{{$data->contact}}</textarea>
                             <script>
                                 CKEDITOR.replace( 'contact' );
                             </script>
                         </div>
                         <label>References</label>
                         <div class="form-group">
-                            <textarea name="references">{{$data->detail}}</textarea>
+                            <textarea name="references">{{$data->references}}</textarea>
                             <script>
                                 CKEDITOR.replace( 'references' );
                             </script>
