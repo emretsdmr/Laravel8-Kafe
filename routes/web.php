@@ -32,10 +32,15 @@ Route::get('/fag', [HomeController::class, 'fag'])->name('fag');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
 Route::get('/product/{id}/{slug}', [HomeController::class, 'product'])->name('product');
-
+Route::get('/categoryproducts/{id}/{slug}', [HomeController::class, 'categoryproducts'])->name('categoryproducts');
+Route::get('/addtocart/{id}/', [HomeController::class, 'addtocart'])->name('addtocart');
+Route::post('/getproduct', [HomeController::class, 'getproduct'])->name('getproduct');
+Route::get('/productlist/{search}', [HomeController::class, 'productlist'])->name('productlist');
 
 //Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->where(['id'=>'[0-9]+','name'=>'[A-Za-z]+']);
 Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('id')->whereAlpha('name')->name('test');
+
+
 
 //Admin
 Route::middleware('auth')->prefix('admin')->group(function(){

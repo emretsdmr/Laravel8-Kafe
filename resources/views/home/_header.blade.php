@@ -15,7 +15,18 @@
                 <div class="full">
                     <div class="right_header_info">
                         <ul>
-                            <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="{{ asset('assets')}}/images/phone_icon.png" alt="#"><a href="#">{{$setting->phone}}</a></li>
+                            <li class="dinone"><!--Search-->
+                                <div class="header-search">
+                                    <form action="{{route('getproduct')}}" method="post">
+                                        @csrf
+                                        @livewire('search')
+                                        <button type="submit" class="search-btn"></i></button>
+                                    </form>
+                                    @livewireScripts
+                                </div>
+                                <!-- /Search-->
+                            </li>
+                            <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="{{ asset('assets')}}/images/phone_icon.png" alt="#">{{$setting->phone}}</a></li>
                             <li class="dinone"><img style="margin-right: 15px;" src="{{ asset('assets')}}/images/mail_icon.png">: {{$setting->email}}</a></li>
                             <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="{{ asset('assets')}}/images/location_icon.png">{{$setting->address}}</a></li>
                             @auth
@@ -25,7 +36,6 @@
                             @guest
                             <li class="button_user"><a class="button active" href="/login">Login</a><a class="button" href="/register">Register</a></li>
                             @endguest
-
                         </ul>
                     </div>
                 </div>

@@ -2,18 +2,149 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e768ab06-934e-4c8d-94ea-0e65d91dc622" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd8b6b14-de17-4dce-a948-875df46fa37e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd8b6b14-de17-4dce-a948-875df46fa37e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/search_products.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/contact-us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/baguetteBox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/bootsnav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/bootstrap-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/carousel-ticker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/code_animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/css/superslides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/about-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/add-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/add-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/all-bg-title.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/banner-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/banner-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/banner-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/big-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/big-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/big-img-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/blog-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/blog-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/blog-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/categories_img_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/categories_img_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/categories_img_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/contact-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/gallery-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/gallery-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/gallery-img-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/gallery-img-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/gallery-img-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/gallery-img-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/gallery-img-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/gallery-img-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/gallery-img-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/gallery-img-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/gallery-img-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/gallery-img-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/img-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/img-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/img-pro-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/img-pro-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/img-pro-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/img-pro-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/ins-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/instagram-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/instagram-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/instagram-img-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/instagram-img-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/instagram-img-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/instagram-img-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/instagram-img-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/instagram-img-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/instagram-img-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/payment-icon/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/payment-icon/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/payment-icon/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/payment-icon/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/payment-icon/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/payment-icon/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/payment-icon/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/smp-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/smp-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/images/smp-img-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/baguetteBox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/bootsnav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/bootstrap-select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/contact-form-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/form-validator.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/images-loded.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/inewsticker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/isotope.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/jquery.nicescroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/jquery.superslides.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/my-account.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/php/form-process.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/shop-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop-master/wishlist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/UpdateUserProfileInformation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/burger_slide.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/burger_slide.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/jetstream.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/jetstream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/api/api-token-manager.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/two-factor-challenge.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/categorytree.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/categorytree.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/delete-user-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/logout-other-browser-sessions-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/update-profile-information-form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +164,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -162,19 +296,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Php\Laravel8-Kafe\resources\views\admin" />
       <recent name="C:\Php\Laravel8-Kafe\resources\views\home" />
+      <recent name="C:\Php\Laravel8-Kafe\resources\views\admin" />
       <recent name="C:\Php\Laravel8-Kafe\resources\views\layouts" />
     </key>
   </component>
@@ -221,6 +356,8 @@
       <workItem from="1610719402078" duration="5527000" />
       <workItem from="1610751182596" duration="106000" />
       <workItem from="1610804877573" duration="16407000" />
+      <workItem from="1610828245116" duration="78000" />
+      <workItem from="1610899843434" duration="12987000" />
     </task>
     <servers />
   </component>
