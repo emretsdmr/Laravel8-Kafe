@@ -12,10 +12,13 @@
             </li>
             @auth
                 <li class="active">
-                    <a href="{{route('myprofile')}}">My Profile</a>
+                    <a href="{{route('userprofile')}}">My Profile</a>
                 </li>
                 <li class="active">
-                    <a href="{{route('myprofile')}}">My Orders</a>
+                    <a href="{{route('home')}}">My Orders</a>
+                </li>
+                <li class="active">
+                    <a href="{{route('user_shopcart')}}">My Shopcart</a>
                 </li>
             @endauth
             <li>

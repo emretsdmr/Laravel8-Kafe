@@ -22,7 +22,9 @@
                                         @livewire('search')
                                         <button type="submit" class="search-btn"></i></button>
                                     </form>
-                                    @livewireScripts
+                                    @section('footerjs')
+                                        @livewireScripts
+                                    @endsection
                                 </div>
                                 <!-- /Search-->
                             </li>
@@ -30,7 +32,7 @@
                             <li class="dinone"><img style="margin-right: 15px;" src="{{ asset('assets')}}/images/mail_icon.png">: {{$setting->email}}</a></li>
                             <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="{{ asset('assets')}}/images/location_icon.png">{{$setting->address}}</a></li>
                             @auth
-                                <li class="button_user"><a class="button active" href="{{route('myprofile')}}">{{Auth::user()->name}}</a>
+                                <li class="button_user"><a class="button active" href="{{route('userprofile')}}">{{Auth::user()->name}}</a>
                                 <a class="button" href="{{route('logout')}}">Logout</a></li>
                             @endauth
                             @guest

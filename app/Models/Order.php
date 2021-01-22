@@ -5,20 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class Order extends Model
 {
     use HasFactory;
-    #One to Many (Inverse) / Belongs To
-    public function category()
+
+    public function user()
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(User::class);
     }
     public function orderproducts()
     {
         return $this->hasMany(Orderproducts::class);
-    }
-    public function shopcart()
-    {
-        return $this->hasMany(Shopcart::class);
     }
 }

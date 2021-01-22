@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Faq;
+use App\Models\Image;
 use App\Models\Message;
 use App\Models\Product;
 use App\Models\Setting;
@@ -38,8 +40,15 @@ class HomeController extends Controller
     }
     public function product($id,$slug)
     {
+        $datalist=Product::where('id',$id)->get();
         $data=Product::find($id);
-        return view('home.product_detail',['data'=>$data]);
+        return view('home.product_detail',['data'=>$data,'datalist'=>$datalist]);
+    }
+    public function categoryproducts($id,$slug)
+    {
+        $datalist=Product::where('category_id',$id)->get();
+        $data=Category::find($id);
+        return view('home.category_products',['data'=>$data,'datalist'=>$datalist]);
     }
     public function getproduct(Request $request)
     {
@@ -68,12 +77,6 @@ class HomeController extends Controller
         print_r($data);
         exit();
     }
-    public function categoryproducts($id,$slug)
-    {
-        $datalist=Product::where('category_id',$id)->get();
-        $data=Category::find($id);
-        return view('home.category_products',['data'=>$data,'datalist'=>$datalist]);
-    }
 
     public function aboutus()
     {
@@ -85,9 +88,10 @@ class HomeController extends Controller
         $setting=Setting::first();
         return view('home.references',['setting'=>$setting]);
     }
-    public function fag()
+    public function faq()
     {
-        return view('home.about');
+        $datalist=Faq::all()->sortBy('position');
+        return view('home.faq',['datalist'=>$datalist]);
     }
     public function contact()
     {
@@ -135,7 +139,7 @@ class HomeController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect('admin/login');
+        return redirect('/');
     }
 
 

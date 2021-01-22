@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@section('title', 'About Us - '. $setting->title)
+@section('title', 'Contact - '. $setting->title)
 @section('description'){{$setting->description}}@endsection
 @section('keywords', $setting->keywords)
 

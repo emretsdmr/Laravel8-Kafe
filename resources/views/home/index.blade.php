@@ -33,7 +33,6 @@
                         <div class="about_box">
                             <h3><a href="{{route('product',['id'=>$rs->id,'slug'=>$rs->slug])}}">{{$rs->title}} - {{$rs->price}}₺</a></h3>
                             <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscureContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard </p>
-                            <a href="{{route('addtocart',['id'=>$rs->id])}}">Add to Cart <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">

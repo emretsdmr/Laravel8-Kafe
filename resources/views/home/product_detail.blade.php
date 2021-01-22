@@ -20,21 +20,32 @@
             <div class="about">
                 <div class="container">
                     <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                                <div class="about_box">
-                                    <h3>{{$data->title}} - {{$data->weight}}gr</h3><br>
-                                    <p>{!! $data->detail !!}
-                                    <h3><br>
-                                        {{$data->price}}₺
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="about_box">
+                                @foreach($datalist as $rs)
+                                    <form form class="main_form" action="{{route('user_shopcart_add',['id'=>$rs->id])}}" method="post">
+                                        @csrf
+                                        <h3>{{$rs->title}} - {{$rs->weight}}gr</h3><br>
+                                        <p>{!! $rs->detail !!}
+                                        <h3><br>
+                                            {{$rs->price}}₺
                                         </h3></p>
-                                    <a href="{{route('addtocart',['id'=>$data->id])}}">Add to Cart <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                                </div>
+                                        <label>Quantity :</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="number" value="1" name="quantity" class="form-control" >
+                                            </div>
+                                        </div>
+                                        <button type="submit">Send</button>
+                                    </form>
+                                @endforeach
                             </div>
-                            <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
-                                <div class="about_img">
-                                    <figure><img src="{{Storage::url($data->image)}}" style="width:400px;height:400px;" alt="#/"></figure>
-                                </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
+                            <div class="about_img">
+                                <figure><img src="{{Storage::url($rs->image)}}" style="width:400px;height:400px;" alt="#/"></figure>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>

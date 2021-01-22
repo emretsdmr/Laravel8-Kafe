@@ -54,7 +54,12 @@
                     <span>Contact Messages</span>
                 </a>
             </li>
-
+            <li>
+                <a href="{{route('admin_faq')}}">
+                    <i class="material-icons">question_answer</i>
+                    <span>FAQs</span>
+                </a>
+            </li>
         </ul>
     </div>
     <!-- #Menu -->

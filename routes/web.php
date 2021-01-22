@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ShopcartController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,12 +32,11 @@ Route::get('/', function () {
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
 Route::get('/references', [HomeController::class, 'references'])->name('references');
-Route::get('/fag', [HomeController::class, 'fag'])->name('fag');
+Route::get('/faq', [HomeController::class, 'faq'])->name('faq');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
 Route::get('/product/{id}/{slug}', [HomeController::class, 'product'])->name('product');
 Route::get('/categoryproducts/{id}/{slug}', [HomeController::class, 'categoryproducts'])->name('categoryproducts');
-Route::get('/addtocart/{id}/', [HomeController::class, 'addtocart'])->name('addtocart');
 Route::post('/getproduct', [HomeController::class, 'getproduct'])->name('getproduct');
 Route::get('/productlist/{search}', [HomeController::class, 'productlist'])->name('productlist');
 
@@ -89,11 +92,41 @@ Route::middleware('auth')->prefix('admin')->group(function(){
     Route::get('setting',[\App\Http\Controllers\Admin\SettingController::class, 'index'])->name('admin_setting');
     Route::post('setting/update',[\App\Http\Controllers\Admin\SettingController::class, 'update'])->name('admin_setting_update');
 
+    #FAQ
+    Route::prefix('faq')->group(function(){
+        Route::get('/',[FaqController::class,'index'])->name('admin_faq');
+        Route::get('create',[FaqController::class,'create'])->name('admin_faq_add');
+        Route::post('store',[FaqController::class,'store'])->name('admin_faq_store');
+        Route::get('edit/{id}',[FaqController::class,'edit'])->name('admin_faq_edit');
+        Route::post('update/{id}',[FaqController::class,'update'])->name('admin_faq_update');
+        Route::get('delete/{id}',[FaqController::class,'destroy'])->name('admin_faq_delete');
+        Route::get('show',[FaqController::class,'show'])->name('admin_faq_show');
 
+    });
 });
+#User
+Route::middleware('auth')->prefix('user')->namespace('user')->group(function(){
 
-Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function(){
-    Route::get('/',[UserController::class,'index'])->name('myprofile');
+    Route::get('/profile',[UserController::class,'index'])->name('userprofile');
+
+    #ShopCart
+    Route::prefix('shopcart')->group(function() {
+        Route::get('/', [ShopcartController::class, 'index'])->name('user_shopcart');
+        Route::post('store/{id}', [ShopcartController::class, 'store'])->name('user_shopcart_add');
+        Route::post('update/{id}', [ShopcartController::class, 'update'])->name('user_shopcart_update');
+        Route::get('delete/{id}', [ShopcartController::class, 'destroy'])->name('user_shopcart_delete');
+    });
+    #Order
+    Route::prefix('order')->group(function() {
+        Route::get('/', [OrderController::class, 'index'])->name('user_orders');
+        Route::get('create', [OrderController::class, 'create'])->name('user_order_add');
+        Route::post('store', [OrderController::class, 'store'])->name('user_order_store');
+        Route::get('edit/{id}', [OrderController::class, 'edit'])->name('user_order_edit');
+        Route::post('update/{id}', [OrderController::class, 'update'])->name('user_order_update');
+        Route::get('delete/{id}', [OrderController::class, 'destroy'])->name('user_order_delete');
+        Route::get('show', [OrderController::class, 'show'])->name('user_order_show');
+    });
+
 });
 
 
