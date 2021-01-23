@@ -14,6 +14,7 @@
                     <div class="title">
                         <i><img src="{{asset('assets')}}/images/title.png" alt="#"/></i>
                         <br><br>
+                        <span>{{$data->title}}</span>
                     </div>
                 </div>
             </div>
@@ -23,13 +24,14 @@
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                             <div class="about_box">
                                 @foreach($datalist as $rs)
-                                    <form form class="main_form" action="{{route('user_shopcart_add',['id'=>$rs->id])}}" method="post">
+                                    <form class="main_form" action="{{route('user_shopcart_add',['id'=>$rs->id])}}" method="post">
                                         @csrf
                                         <h3>{{$rs->title}} - {{$rs->weight}}gr</h3><br>
                                         <p>{!! $rs->detail !!}
                                         <h3><br>
                                             {{$rs->price}}₺
                                         </h3></p>
+                                        @auth
                                         <label>Quantity :</label>
                                         <div class="form-group">
                                             <div class="form-line">
@@ -37,6 +39,7 @@
                                             </div>
                                         </div>
                                         <button type="submit">Send</button>
+                                        @endauth
                                     </form>
                                 @endforeach
                             </div>

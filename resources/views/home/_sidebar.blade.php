@@ -15,7 +15,7 @@
                     <a href="{{route('userprofile')}}">My Profile</a>
                 </li>
                 <li class="active">
-                    <a href="{{route('home')}}">My Orders</a>
+                    <a href="{{route('user_orders')}}">My Orders</a>
                 </li>
                 <li class="active">
                     <a href="{{route('user_shopcart')}}">My Shopcart</a>

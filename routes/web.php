@@ -119,12 +119,12 @@ Route::middleware('auth')->prefix('user')->namespace('user')->group(function(){
     #Order
     Route::prefix('order')->group(function() {
         Route::get('/', [OrderController::class, 'index'])->name('user_orders');
-        Route::get('create', [OrderController::class, 'create'])->name('user_order_add');
+        Route::post('create', [OrderController::class, 'create'])->name('user_order_add');
         Route::post('store', [OrderController::class, 'store'])->name('user_order_store');
         Route::get('edit/{id}', [OrderController::class, 'edit'])->name('user_order_edit');
         Route::post('update/{id}', [OrderController::class, 'update'])->name('user_order_update');
         Route::get('delete/{id}', [OrderController::class, 'destroy'])->name('user_order_delete');
-        Route::get('show', [OrderController::class, 'show'])->name('user_order_show');
+        Route::get('show/{id}', [OrderController::class, 'show'])->name('user_order_show');
     });
 
 });
