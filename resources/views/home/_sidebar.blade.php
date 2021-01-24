@@ -8,19 +8,22 @@
 
         <ul class="list-unstyled components">
             <li class="active">
-                <a href="{{route('home')}}">Home</a>
+                <a href="{{route('home')}}">Anasayfa</a>
             </li>
             @auth
                 <li class="active">
-                    <a href="{{route('userprofile')}}">My Profile</a>
+                    <a href="{{route('profile.show')}}">Profilim</a>
                 </li>
                 <li class="active">
-                    <a href="{{route('user_orders')}}">My Orders</a>
+                    <a href="{{route('user_orders')}}">Siparişlerim</a>
                 </li>
                 <li class="active">
-                    <a href="{{route('user_shopcart')}}">My Shopcart</a>
+                    <a href="{{route('user_shopcart')}}">Sepetim</a>
                 </li>
             @endauth
+            <li class="active">
+                <a href="#">Menü</a>
+            </li>
             <li>
                 @include('home._category')
             </li>

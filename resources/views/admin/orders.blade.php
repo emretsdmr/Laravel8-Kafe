@@ -51,7 +51,7 @@
                                                     <td>{!! $rs->note !!}</td>
                                                     <td>{{$rs->status}}</td>
                                                     <td>{{$rs->total}}₺</td>
-                                                    <td><a href="{{route('admin_order_show',['id'=>$rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=800')">Show</a></td>
+                                                    <td><a href="{{route('admin_order_show',['id'=>$rs->id])}}" onclick="return !window.open(this.href,'','top=50 left=100 width=1100,height=800')"><i class="material-icons">desktop_windows</i></a></td>
                                                     <td><a href="{{route('admin_order_delete',['id'=>$rs->id])}}" onclick="return confirm('Delete ! Are you sure?')"><i class="material-icons">delete</i></a></td>
                                                 </tr>
                                             @endforeach

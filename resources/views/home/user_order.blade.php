@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@section('title', 'My Shopcart')
+@section('title', 'Siparişlerim')
 
 
 
@@ -13,7 +13,7 @@
                     <div class="title">
                         <i><img src="{{asset('assets')}}/images/title.png" alt="#"/></i>
                         <br><br>
-                        <span>My Orders</span>
+                        <span>Siparişlerim</span>
                     </div>
                 </div>
             </div>

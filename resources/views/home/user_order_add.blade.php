@@ -33,7 +33,7 @@
                                 </div>
                                 <br><br>
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <button type="submit" class="send">Send</button>
+                                <button type="submit" class="submit">Send</button>
                                 </div>
                             </form>
                         </table>

@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@section('title', 'My Shopcart')
+@section('title', 'Sepetim')
 
 
 
@@ -13,7 +13,7 @@
                     <div class="title">
                         <i><img src="{{asset('assets')}}/images/title.png" alt="#"/></i>
                         <br><br>
-                        <span>My Shopcart</span>
+                        <span>Sepetim</span>
                     </div>
                 </div>
             </div>
@@ -62,13 +62,13 @@
                             @endforeach
                             </tbody>
                         </table>
-                        Total: {{$total}}₺
+                        <h4>Total: {{$total}}₺</h4>
                         <br>
-                        <form class="main_form" action="{{route('user_order_add')}}" method="post">
+                        <form action="{{route('user_order_add')}}" method="post">
                             @csrf
                             <div class="form-line">
                                 <input type="hidden" name="total" value="{{$total}}">
-                                <button type="submit" class="send">Order</button>
+                                <button type="submit" class="submit">Sipariş Ver</button>
                             </div>
                         </form>
                     </div>

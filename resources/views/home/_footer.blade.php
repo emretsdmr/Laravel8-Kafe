@@ -18,15 +18,6 @@
                         <li> <a href="{{route('contact')}}">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-md-12">
-                    <div class="new">
-                        <h3>Newsletter</h3>
-                        <form class="newtetter">
-                            <input class="tetter" placeholder="Your email" type="text" name="Your email">
-                            <button class="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="copyright">

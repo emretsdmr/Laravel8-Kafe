@@ -38,7 +38,7 @@
                                                 <input type="number" value="1" name="quantity" class="form-control" >
                                             </div>
                                         </div>
-                                        <button type="submit">Send</button>
+                                        <button type="submit" class="submit">Sepete Ekle</button>
                                         @endauth
                                     </form>
                                 @endforeach

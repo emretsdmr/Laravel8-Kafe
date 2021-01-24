@@ -3,12 +3,14 @@
     <!-- User Info -->
     <div class="user-info">
         <div class="image">
-            <img src="{{asset('assets')}}/admin/images/user.png" width="48" height="48" alt="User" />
+            @if(Auth::user()->profile_photo_path)
+                <img src="{{Storage::url(Auth::user()->profile_photo_path)}}" width="48" height="48" alt="User" />
+            @endif
         </div>
         <div class="info-container">
             @auth
-            <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}}</div>
-            <div class="email">{{Auth::user()->email}}</div>
+                <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{Auth::user()->name}}</div>
+                <div class="email">{{Auth::user()->email}}</div>
             @endauth
             <div class="btn-group user-helper-dropdown">
                 <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
@@ -79,6 +81,12 @@
                         <a href="{{route('admin_order_list',['status'=>'rejected'])}}">Rejected Orders</a>
                     </li>
                 </ul>
+            </li>
+            <li>
+                <a href="{{route('admin_users')}}">
+                    <i class="material-icons">person</i>
+                    <span>Users</span>
+                </a>
             </li>
         </ul>
     </div>

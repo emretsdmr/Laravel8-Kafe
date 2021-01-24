@@ -28,7 +28,7 @@ class HomeController extends Controller
     {
         $setting=Setting::first();
         $slider=Product::select('id','title','image','price','slug')->limit(4)->get();
-        $picked=Product::select('id','title','image','price','slug')->limit(1)->inRandomOrder()->get();
+        $picked=Product::select('id','title','detail','image','price','slug')->limit(1)->inRandomOrder()->get();
 
         $data= [
             'setting'=> $setting,
@@ -44,9 +44,9 @@ class HomeController extends Controller
         $data=Product::find($id);
         return view('home.product_detail',['data'=>$data,'datalist'=>$datalist]);
     }
-    public function categoryproducts($id,$slug)
+    public function categoryproducts($id,$slug,$status)
     {
-        $datalist=Product::where('category_id',$id)->get();
+        $datalist=Product::where('category_id',$id)->where('status',$status)->get();
         $data=Category::find($id);
         return view('home.category_products',['data'=>$data,'datalist'=>$datalist]);
     }
