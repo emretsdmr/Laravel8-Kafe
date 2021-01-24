@@ -24,7 +24,7 @@
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                             <div class="about_box">
                                 @foreach($datalist as $rs)
-                                    <form class="main_form" action="{{route('user_shopcart_add',['id'=>$rs->id])}}" method="post">
+                                    <form action="{{route('user_shopcart_add',['id'=>$rs->id])}}" method="post">
                                         @csrf
                                         <h3>{{$rs->title}} - {{$rs->weight}}gr</h3><br>
                                         <p>{!! $rs->detail !!}

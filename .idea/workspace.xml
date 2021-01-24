@@ -4,10 +4,14 @@
     <list default="true" id="e768ab06-934e-4c8d-94ea-0e65d91dc622" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/cd8b6b14-de17-4dce-a948-875df46fa37e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cd8b6b14-de17-4dce-a948-875df46fa37e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/product_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_order_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_order_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_order.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/user_shopcart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_shopcart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -168,15 +172,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Php\Laravel8-Kafe\resources\views\home" />
       <recent name="C:\Php\Laravel8-Kafe\resources\views\admin" />
+      <recent name="C:\Php\Laravel8-Kafe\resources\views\home" />
       <recent name="C:\Php\Laravel8-Kafe\resources\views\layouts" />
     </key>
   </component>
@@ -232,7 +236,9 @@
       <workItem from="1611279464087" duration="183000" />
       <workItem from="1611283762527" duration="695000" />
       <workItem from="1611334941476" duration="9165000" />
-      <workItem from="1611354384237" duration="8681000" />
+      <workItem from="1611354384237" duration="9280000" />
+      <workItem from="1611418954247" duration="10256000" />
+      <workItem from="1611441288706" duration="5007000" />
     </task>
     <servers />
   </component>

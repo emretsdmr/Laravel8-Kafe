@@ -60,6 +60,26 @@
                     <span>FAQs</span>
                 </a>
             </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">attach_money</i>
+                    <span>Orders</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="{{route('admin_orders')}}">All Orders</a>
+                    </li>
+                    <li>
+                        <a href="{{route('admin_order_list',['status'=>'new'])}}">New Orders</a>
+                    </li>
+                    <li>
+                        <a href="{{route('admin_order_list',['status'=>'accepted'])}}">Accepted Orders</a>
+                    </li>
+                    <li>
+                        <a href="{{route('admin_order_list',['status'=>'rejected'])}}">Rejected Orders</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
     <!-- #Menu -->

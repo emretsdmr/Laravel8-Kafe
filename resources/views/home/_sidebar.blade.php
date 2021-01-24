@@ -24,8 +24,16 @@
             <li>
                 @include('home._category')
             </li>
-
+            @auth
+                @php
+                    $userRoles=Auth::user()->roles->pluck('name');
+                @endphp
+                @if($userRoles->contains('admin'))
+                    <li class="active">
+                        <a href="{{route('admin_home')}}" target="_blank">Admin Panel</a>
+                    </li>
+                @endif
+            @endauth
         </ul>
-
     </nav>
 </div>

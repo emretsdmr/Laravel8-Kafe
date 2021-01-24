@@ -12,7 +12,7 @@
                 <div class="col-md-12">
                     <div class="title">
                         <i><img src="{{asset('assets')}}/images/title.png" alt="#"/></i>
-
+                        <br><br>
                         <span>My Orders</span>
                     </div>
                 </div>
